@@ -1,0 +1,21 @@
+.architecture_categry_nav_link {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.architecture_categry_nav_link:hover {
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.categry_nav_link{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.categry_nav_link:hover{
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
