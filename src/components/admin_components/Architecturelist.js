@@ -130,7 +130,7 @@ const ArchitectureList = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link btn btn-primary text-light mx-2" to="/admin">
+                <Link className="nav-link btn btn-primary text-light mx-2" to="/admin/dashboard">
                   Dashboard
                 </Link>
               </li>

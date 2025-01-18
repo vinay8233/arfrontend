@@ -218,7 +218,7 @@ const ContactList = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-primary text-light mx-2"
-                to="/admin"
+                to="/admin/dashboard"
               >
                 Dashboard
               </Link>

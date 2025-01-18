@@ -111,7 +111,7 @@ const InteriorList = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-primary text-light mx-2"
-                to="/admin"
+                to="/admin/dashboard"
               >
                 Dashboard
               </Link>
@@ -135,7 +135,7 @@ const InteriorList = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-primary text-light mx-2"
-                to="#"
+                to="/admin/aboutawards"
               >
                 About Us
               </Link>

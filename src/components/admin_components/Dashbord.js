@@ -111,7 +111,7 @@ const Dashboard = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-primary text-light mx-2"
-                to="/admin"
+                to="/admin/dashboard"
               >
                 Dashboard
               </Link>
@@ -135,7 +135,7 @@ const Dashboard = () => {
             <li className="nav-item">
               <Link
                 className="nav-link btn btn-primary text-light mx-2"
-                to="#"
+                to="/admin/aboutawards"
               >
                 About Us
               </Link>
@@ -184,34 +184,7 @@ const Dashboard = () => {
 </table>
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <form  class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">add architure</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-            <label htmlFor=""> Image</label>
-            <input  onChange={(e)=>{setImg(e.target.files[0])}} className='form-control' type="file" name='img'id='' />
 
-            
-            
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button
-                type="button"
-                className="btn btn-primary"
-                onClick={handleUpload}
-                data-bs-dismiss="modal"
-              >
-                Upload
-              </button>
-      </div>
-    </div>
-  </form>
-</div>
 
 {/* update modal  */}
 
