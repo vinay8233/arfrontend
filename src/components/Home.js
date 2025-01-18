@@ -22,30 +22,6 @@ const Home = () => {
   return (
     <>
 
-{/* <div id="carouselExample" class="carousel slide">
-        <div className="carousel-inner">
-          {product.map((item) => (
-            <div className="carousel-item active">
-
-              <img className="d-block w-100 "
-                src={`${process.env.REACT_APP_API_URL}/uploads/${item.img}`}
-                alt="Product"
-                // style={{ width: '100px', height: 'auto' }}
-              />
-
-            </div>
-          ))}
-        </div>
-
-        <button className="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon bg-dark" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span className="carousel-control-next-icon bg-dark" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div> */}
 
 <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
