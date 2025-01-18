@@ -125,7 +125,7 @@ function App() {
       <Navbar/>
       <Routes>
       <Route path='/admin' element={<Admin/>}></Route>  
-      <Route path='/home' element={<Home/>}></Route>  
+      <Route path='/' element={<Home/>}></Route>  
 
 
       <Route path='/admin/dashboard' element={<Dashboard/>}></Route>  
