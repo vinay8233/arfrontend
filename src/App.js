@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
 import Dashboard from './components/admin_components/Dashbord';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
@@ -105,6 +105,14 @@ import Eclectichome from './Eclectic home';
 import Linealhome from './Lineal home';
 import Namanoffice from './components/Naman office';
 import Office63 from './Office @63';
+import ProjectImages from './components/Projectimage';
+import Residential from './components/Residential';
+import Intprojectimages from './components/Intprojectinmage';
+import Offices from './components/Offices';
+import Retail from './components/Retail';
+import Installations from './components/Installations';
+import Admin from './components/admin_components/Admin';
+import Home from './components/Home';
 
 
 
@@ -116,14 +124,28 @@ function App() {
 <Router>
       <Navbar/>
       <Routes>
+      <Route path='/admin' element={<Admin/>}></Route>  
+      <Route path='/home' element={<Home/>}></Route>  
+
+
       <Route path='/admin/dashboard' element={<Dashboard/>}></Route>  
       <Route path='/contact' element={<Contact/>}></Route>
       <Route path='/architecture' element={<Architecture/>}></Route>
+      <Route path="/project-images/:projectName" element={<ProjectImages />} />
+      <Route path="/intproject-images/:projectName" element={<Intprojectimages />} />
+
 
       <Route path='/admin/contactlist' element={<ContactList/>}></Route>
       <Route path='/admin/Architecturelist' element={<Architecturelist/>}></Route>
       <Route path='/admin/interiorlist' element={<Interiorlist/>}></Route>
       <Route path='/interior' element={<Interior/>}></Route>
+      <Route path='/interior/residential' element={<Residential/>}></Route>
+      <Route path='/interior/offices' element={<Offices/>}></Route>
+      <Route path='/interior/retail' element={<Retail/>}></Route>
+      <Route path='/interior/installations' element={<Installations/>}></Route>
+
+
+      
       <Route path='/interior/residential/18-screen' element={<Screen18/>}></Route>
       <Route path='/interior/residential/savani-house' element={<Savanihouse/>}></Route>
       <Route path='/interior/residential/apartment-c' element={<Apartmentc/>}></Route>
@@ -224,7 +246,7 @@ function App() {
       <Route path='/architeecture/hospitality/evos-kuranga' element={<Evoskuranga/>} ></Route>
       <Route path='/architeecture/hospitality/Villa-seven' element={<Villaseven/>} ></Route>
       
-      
+
 
       
       <Route path='/architeecture/office-building' element={<OfficeBuilding/>} ></Route>
